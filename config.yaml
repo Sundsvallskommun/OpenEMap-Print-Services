@@ -173,7 +173,7 @@ layouts:
           width: 560
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 22
               #spacingAfter: 20
         - !map
@@ -261,7 +261,7 @@ layouts:
           width: 820
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 26
               #spacingAfter: 20
         - !map
@@ -350,7 +350,7 @@ layouts:
           width: 820
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -437,7 +437,7 @@ layouts:
           width: 1100
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -526,7 +526,7 @@ layouts:
           width: 1100
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -640,7 +640,7 @@ layouts:
           width: 1500
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -798,7 +798,7 @@ layouts:
           width: 1500
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -873,7 +873,7 @@ layouts:
           width: 2200
           items:
             - !text
-              text: 'Karta'
+              text: '${mapTitle}'
               fontSize: 40
               spacingAfter: 20
         - !map
