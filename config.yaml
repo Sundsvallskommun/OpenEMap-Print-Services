@@ -140,7 +140,9 @@ layouts:
               align: right
               text: 'Datum: ${now yyyy-MM-dd}'
 
+  #===========================================================================
   A4 portrait:
+  #===========================================================================
     metaData:
       title: '${mapTitle}'
       author: 'Sundsvalls kommun'
@@ -942,3 +944,60 @@ layouts:
       subject: ''
       keywords: ''
       creator: ''
+  #===========================================================================
+  OEP_A4_Landscape:
+  #===========================================================================
+    mainPage:
+      marginLeft: 0
+      marginTop: 0
+      marginRight: 0
+      marginBottom: 0
+      pageSize: 842 595
+      items:
+        - !map
+          width: 780
+          height: 510
+          absoluteX: 30
+          absoluteY: 540
+          name: Karta
+        #Header columns
+        - !columns
+          absoluteX: 30
+          absoluteY: 530
+          width: 770
+          items:
+            - !image
+              maxWidth: 40
+              maxHeight: 50
+              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              align: right
+        #footer columns
+        - !columns
+          absoluteX: 40
+          absoluteY: 80
+          width: 200
+          items:
+            - !text
+              font: Helvetica
+              fontSize: 12
+              align: left
+              text: 'Skala 1:${scale}'
+        - !columns
+          absoluteX: 40
+          absoluteY: 60
+          width: 760
+          items:
+            - !scalebar
+              type: line
+              lineWidth: 2
+              labelDistance: 5
+              maxSize:350
+              barBgColor: white
+              fontSize: 12
+              align: left
+            - !text
+              condition: attribution
+              font: Helvetica
+              fontSize: 12
+              align: right
+              text: '${attribution}'
