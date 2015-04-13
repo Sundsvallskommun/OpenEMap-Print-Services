@@ -49,9 +49,9 @@ layouts:
   OH_GENERIC:
   #===========================================================================
     metaData:
-     # title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+      title: ''
+      author: 'SWECO'
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -94,7 +94,7 @@ layouts:
             - !image
               maxWidth: 60
               maxHeight: 60
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://localhost/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         - !columns
@@ -140,13 +140,11 @@ layouts:
               align: right
               text: 'Datum: ${now yyyy-MM-dd}'
 
-  #===========================================================================
   A4 portrait:
-  #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -172,50 +170,46 @@ layouts:
         - !columns
           absoluteX: 30
           absoluteY: 820
-          width: 535
+          width: 560
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 22
               #spacingAfter: 20
         - !map
           #spacingAfter: 0
-          width: 535
-          height: 750
+          width: 540
+          height: 770
           absoluteX: 30
-          absoluteY: 780
+          absoluteY: 790
           name: Karta
         #Header columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 40
+          absoluteX: 50
           absoluteY: 770
-          width: 515
-          items:
-            - !image
-              maxWidth: 40
-              maxHeight: 50
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
-              #rotation: '${rotation}'
-              align: right
-        #footer columns
-        - !columns
-          absoluteX: 40
-          absoluteY: 80
-          width: 200
+          width: 520
           items:
             - !text
               font: Helvetica
               fontSize: 12
-              align: left
-              text: 'Skala 1:${scale}'
+              align: right
+              text: ''
+              #text: '1:${scale} ${now yyyy-MM-dd}'
+            - !image
+              maxWidth: 40
+              maxHeight: 50
+              url: 'http://194.71.24.174/north-arrow.svg'
+              #rotation: '${rotation}'
+              align: right
+        #footer columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 40
+          absoluteX: 50
           absoluteY: 60
-          width: 515
+          width: 520
           items:
             - !scalebar
               type: line
@@ -238,9 +232,9 @@ layouts:
   A4 landscape:
   #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -262,50 +256,46 @@ layouts:
 #            text: '${layout}'
       items:
         - !columns
-          absoluteX: 30
+          absoluteX: 40
           absoluteY: 580
-          width: 780
+          width: 820
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 26
               #spacingAfter: 20
         - !map
           #spacingAfter: 0
           width: 780
           height: 510
-          absoluteX: 30
+          absoluteX: 40
           absoluteY: 540
           name: Karta
         #Header columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 30
-          absoluteY: 530
-          width: 770
-          items:
-            - !image
-              maxWidth: 40
-              maxHeight: 50
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
-              #rotation: '${rotation}'
-              align: right
-        #footer columns
-        - !columns
-          absoluteX: 40
-          absoluteY: 80
-          width: 200
+          absoluteX: 60
+          absoluteY: 550
+          width: 750
           items:
             - !text
               font: Helvetica
               fontSize: 12
-              align: left
-              text: 'Skala 1:${scale}'
+              align: right
+              text: ''
+              #text: '1:${scale} ${now yyyy-MM-dd}'
+            - !image
+              maxWidth: 40
+              maxHeight: 50
+              url: 'http://194.71.24.174/north-arrow.svg'
+              #rotation: '${rotation}'
+              align: right
+        #footer columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 40
+          absoluteX: 60
           absoluteY: 60
           width: 760
           items:
@@ -315,7 +305,7 @@ layouts:
               labelDistance: 5
               maxSize:350
               barBgColor: white
-              fontSize: 12
+              fontSize: 14
               align: left
             - !text
               condition: attribution
@@ -330,9 +320,9 @@ layouts:
   A3 portrait:
   #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -355,66 +345,61 @@ layouts:
 #            text: '${layout}'      
       items:
         - !columns
-          absoluteX: 30
+          absoluteX: 40
           absoluteY: 1170
-          width: 780
+          width: 820
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               #spacingAfter: 20
         - !map
           #spacingAfter: 0
-          width: 780
-          height: 1070
-          absoluteX: 30
+          width: 820
+          height: 1100
+          absoluteX: 40
           absoluteY: 1100
           name: Karta
         #Header columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 30
+          absoluteX: 60
           absoluteY: 1080
-          width: 770
+          width: 780
           items:
+            - !text
+              font: Helvetica
+              fontSize: 12
+              align: right
+              text: ''
+              #text: '1:${scale} ${now yyyy-MM-dd}'
             - !image
               maxWidth: 80
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
         - !columns
-          absoluteX: 40
-          absoluteY: 80
-          width: 200
-          items:
-            - !text
-              font: Helvetica
-              fontSize: 12
-              align: left
-              text: 'Skala 1:${scale}'
-        - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 40
+          absoluteX: 60
           absoluteY: 60
-          width: 760
+          width: 780
           items:
             - !scalebar
               type: line
-              lineWidth: 2
+              lineWidth: 3
               labelDistance: 5
               maxSize:350
               barBgColor: white
-              font: Helvetica
-              fontSize: 12
+              fontSize: 18
               align: left
             - !text
               condition: attribution
               font: Helvetica
-              fontSize: 12
+              fontSize: 14
               align: right
               text: '${attribution}'
 
@@ -422,11 +407,11 @@ layouts:
 
 #===========================================================================
   A3 landscape:
-#===========================================================================
+  #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -449,50 +434,46 @@ layouts:
         - !columns
           absoluteX: 40
           absoluteY: 820
-          width: 1110
+          width: 1100
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               #spacingAfter: 20
         - !map
           #spacingAfter: 0
-          width: 1110
-          height: 720
+          width: 1100
+          height: 760
           absoluteX: 40
-          absoluteY: 760
+          absoluteY: 770
           name: Karta
         #Header columns
         - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 50
+          absoluteX: 60
           absoluteY: 750
-          width: 1090
+          width: 1050
           items:
+            - !text
+              font: Helvetica
+              fontSize: 12
+              align: right
+              text: ''
+              #text: '1:${scale} ${now yyyy-MM-dd}'
             - !image
               maxWidth: 80
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
         - !columns
-          absoluteX: 50
-          absoluteY: 120
-          width: 200
-          items:
-            - !text
-              font: Helvetica
-              fontSize: 18
-              align: left
-              text: 'Skala 1:${scale}'
-        - !columns
           #widths: [1100, 1100]
           # Absolut position?
-          absoluteX: 50
-          absoluteY: 90
-          width: 1080
+          absoluteX: 60
+          absoluteY: 60
+          width: 1000
           items:
             - !scalebar
               type: line
@@ -513,11 +494,11 @@ layouts:
 
 #===========================================================================
   A2 portrait:
-#===========================================================================
+  #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -545,7 +526,7 @@ layouts:
           width: 1100
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -572,7 +553,7 @@ layouts:
             - !image
               maxWidth: 80
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
@@ -614,11 +595,11 @@ layouts:
 
 #===========================================================================
   A2 landscape:
-#===========================================================================
+  #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -659,7 +640,7 @@ layouts:
           width: 1500
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -686,7 +667,7 @@ layouts:
             - !image
               maxWidth: 80
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
@@ -713,13 +694,95 @@ layouts:
               text: '${attribution}'
               #text: '1:${scale} ${now yyyy-MM-dd}'
 
+# #===========================================================================
+#   A1 portrait:
+#   #===========================================================================
+#     metaData:
+# #      title: '${mapTitle}'
+#       author: ''
+#       subject: ''
+#       keywords: ''
+#       creator: ''
+
+
+#     mainPage:
+#       pageSize: A1
+#       rotation: true
+# #      header:
+# #        height: 50
+# #        items:
+# #          - !text
+# #            font: Helvetica
+# #            fontSize: 30
+# #            align: right
+# #            text: '${layout}'
+#       items:
+#         - !columns
+#           absoluteX: 100
+#           absoluteY: 1650
+#           width: 1400
+#           items:
+#             - !text
+#               text: 'Karta'
+#               fontSize: 40
+#               spacingAfter: 20
+#           - !map
+#             #spacingAfter: 0
+#             width: 1400
+#             height: 2200
+#             absoluteX: 100
+#             absoluteY: 1550
+#             name: Karta
+#            - !columns
+#             #widths: [1100, 1100]
+#             # Absolut position?
+#             absoluteX: 100
+#             absoluteY: 1450
+#             width: 1400
+#             items:
+#               - !text
+#                 font: Helvetica
+#                 fontSize: 12
+#                 align: right
+#                 text: ''
+#                 #text: '1:${scale} ${now yyyy-MM-dd}'
+#               - !image
+#                 maxWidth: 100
+#                 maxHeight: 100
+#                 url: 'http://194.71.24.174/north-arrow.svg'
+#                 #rotation: '${rotation}'
+#                 align: right
+#           #footer columns
+#           - !columns
+#             #widths: [1100, 1100]
+#             # Absolut position?
+#             absoluteX: 140
+#             absoluteY: 100
+#             width: 1400
+#             items:
+#               - !scalebar
+#                 type: line
+#                 lineWidth: 3
+#                 labelDistance: 5
+#                 maxSize: 500
+#                 barBgColor: white
+#                 fontSize: 24
+#                 align: left
+#               - !text
+#                 condition: attribution
+#                 font: Helvetica
+#                 fontSize: 16
+#                 align: right
+#                 text: '${attribution}'
+#                 #text: '1:${scale} ${now yyyy-MM-dd}'
+
   #===========================================================================
   A1 portrait:
   #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -735,7 +798,7 @@ layouts:
           width: 1500
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               #spacingAfter: 20
         - !map
@@ -762,7 +825,7 @@ layouts:
             - !image
               maxWidth: 80
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
@@ -792,11 +855,11 @@ layouts:
 
 #===========================================================================
   A1 landscape:
-#===========================================================================
+  #===========================================================================
     metaData:
-      title: '${mapTitle}'
-      author: 'Sundsvalls kommun'
-      subject: 'Karta'
+#      title: '${mapTitle}'
+      author: ''
+      subject: ''
       keywords: ''
       creator: ''
 
@@ -810,7 +873,7 @@ layouts:
           width: 2200
           items:
             - !text
-              text: '${mapTitle}'
+              text: 'Karta'
               fontSize: 40
               spacingAfter: 20
         - !map
@@ -837,7 +900,7 @@ layouts:
             - !image
               maxWidth: 100
               maxHeight: 100
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               #rotation: '${rotation}'
               align: right
         #footer columns
@@ -944,6 +1007,7 @@ layouts:
       subject: ''
       keywords: ''
       creator: ''
+
   #===========================================================================
   OEP_A4_Landscape:
   #===========================================================================
@@ -969,7 +1033,7 @@ layouts:
             - !image
               maxWidth: 40
               maxHeight: 50
-              url: 'https://karta.e-tjansteportalen.se/north-arrow.svg'
+              url: 'http://194.71.24.174/north-arrow.svg'
               align: right
         #footer columns
         - !columns
