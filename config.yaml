@@ -39,6 +39,8 @@ hosts:
   - !dnsMatch
     host: extmap.sundsvall.se
 
+globalParallelFetches 50
+perHostParallelFetches 50
 outputFilename: map
 connectionTimeout: 60000
 socketTimeout: 180000
