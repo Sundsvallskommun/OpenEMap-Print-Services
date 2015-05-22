@@ -956,14 +956,14 @@ layouts:
       items:
         - !map
           width: 780
-          height: 510
+          height: 535
           absoluteX: 30
-          absoluteY: 540
+          absoluteY: 565
           name: Karta
         #Header columns
         - !columns
           absoluteX: 30
-          absoluteY: 530
+          absoluteY: 555
           width: 770
           items:
             - !image
@@ -1001,3 +1001,37 @@ layouts:
               fontSize: 12
               align: right
               text: '${attribution}'
+  #===========================================================================
+  Legend:
+  #===========================================================================
+    mainPage:
+      marginLeft: 0
+      marginTop: 0
+      marginRight: 0
+      marginBottom: 0
+      pageSize: 842 595
+      items:
+        - !legends
+            backgroundColor: #FFFFFF
+            borders: true
+            horizontalAlignment: center
+#        ?         maxWidth: 0
+#        ?         maxHeight: 0
+#        ?         iconMaxWidth: 0
+#        ?         iconMaxHeight: 8
+#        ?         iconPadding: 8 7 6 5
+#        ?         textMaxWidth: 8
+#        ?         textMaxHeight: 8
+#        ?         textPadding: 8 7 6 5
+#            defaultScale: 1.0
+            inline: true
+#        ?         classIndentation: 20
+#        ?         layerSpaceBefore: 5
+#        ?         layerSpace: 5
+#        ?         classSpace: 2
+            layerFont: Helvetica
+            layerFontSize: 10
+            classFont: Helvetica
+            classFontSize: 8
+#        ?         fontEncoding: Cp1252
+            columnMargin: 3
