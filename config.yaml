@@ -39,6 +39,8 @@ hosts:
   - !dnsMatch
     host: extmap.sundsvall.se
 
+globalParallelFetches: 50
+perHostParallelFetches: 50
 outputFilename: map
 connectionTimeout: 60000
 socketTimeout: 180000
@@ -160,14 +162,6 @@ layouts:
       #pageSize: 842 595
 
       rotation: true
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'
       items:
         - !columns
           absoluteX: 30
@@ -252,14 +246,6 @@ layouts:
       marginBottom: 0
       pageSize: 842 595
       #rotation: false
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'
       items:
         - !columns
           absoluteX: 30
@@ -345,14 +331,6 @@ layouts:
       pageSize: A3
       #pageSize: 842 1191
       rotation: true
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'      
       items:
         - !columns
           absoluteX: 30
@@ -437,14 +415,6 @@ layouts:
       marginRight: 0
       marginBottom: 0
       pageSize: 1191 842
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'
       items:
         - !columns
           absoluteX: 40
@@ -530,14 +500,6 @@ layouts:
       pageSize: A2
       #pageSize: 1191 1648
       #rotation: false
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'
       items:
         - !columns
           absoluteX: 40
@@ -597,20 +559,6 @@ layouts:
               fontSize: 16
               align: right
               text: '${attribution}'
-      # items:
-      #   - !text
-      #     text: 'Karta'
-      #     fontSize: 40
-      #     spacingAfter: 30
-      #   - !map
-      #     spacingAfter: 30
-      #     width: 1000
-      #     height: 1480
-      #   - !text
-      #     font: Helvetica
-      #     fontSize: 9
-      #     align: right
-      #     text: '1:${scale} ${now yyyy-MM-dd}'
 
 #===========================================================================
   A2 landscape:
@@ -630,28 +578,6 @@ layouts:
       marginRight: 0
       marginBottom: 0
       #rotation: false
-#      header:
-#        height: 50
-#        items:
-#          - !text
-#            font: Helvetica
-#            fontSize: 30
-#            align: right
-#            text: '${layout}'
-      # items:
-      #   - !text
-      #     text: 'Karta'
-      #     fontSize: 40
-      #     spacingAfter: 30
-      #   - !map
-      #     spacingAfter: 30
-      #     width: 1480
-      #     height: 1000
-      #   - !text
-      #     font: Helvetica
-      #     fontSize: 9
-      #     align: right
-      #     text: '1:${scale} ${now yyyy-MM-dd}'
       items:
         - !columns
           absoluteX: 80
