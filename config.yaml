@@ -38,6 +38,8 @@ hosts:
     host: extmaptest.sundsvall.se
   - !dnsMatch
     host: extmap.sundsvall.se
+  - !dnsMatch
+    host: gis.timra.se
 
 globalParallelFetches: 50
 perHostParallelFetches: 50
